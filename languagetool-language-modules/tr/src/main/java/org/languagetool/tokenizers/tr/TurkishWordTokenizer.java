@@ -72,8 +72,8 @@ public class TurkishWordTokenizer extends WordTokenizer {
     while (st.hasMoreElements()) {
       raw.add(st.nextToken());
     }
-    List<String> joined = joinApostropheInsideWords(raw);
-    return joinEMailsAndUrls(joined);
+    List<String> joined = joinEMailsAndUrls(raw);
+    return joinApostropheInsideWords(joined);
   }
 
   /**
