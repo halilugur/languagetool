@@ -146,4 +146,104 @@ USA
 
     </category>
 
+    <!-- ADDITIONAL CONFUSIONS -->
+
+    <category id="CONFUSIONS" name="Sık Karıştırılan Sözcükler" type="misspelling">
+
+        <!-- "hatta" vs "hata": "hata" = error, "hatta" = even/moreover. Common misspelling
+             of the conjunction "hatta" as "hata". We flag "hata" only when used in a
+             clearly-conjunctive position is too fragile without POS, so instead we catch
+             the reverse high-confidence case: "hata" used where "hatta" is meant is hard
+             to detect reliably. Skip this and focus on clearer cases below. -->
+
+        <!-- "lise" is correct; "lisse" (French-influenced) is wrong -->
+        <rule id="LISSE" name="'lisse' yerine 'lise'">
+            <pattern>
+                <token regexp="yes">[Ll]isse</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Ll])isse" regexp_replace="$1ise"/></suggestion>.</message>
+            <example correction="Lise"><marker>Lisse</marker> öğrencisi.</example>
+            <example correction="lise">Kardeşim <marker>lisse</marker> okuyor.</example>
+        </rule>
+
+        <!-- "ülkesinde" is fine; common confusion: "herhengi" -> "herhangi" -->
+        <rule id="HERHENGI" name="'herhengi' yerine 'herhangi'">
+            <pattern>
+                <token regexp="yes">[Hh]erhengi</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Hh])erhengi" regexp_replace="$1erhangi"/></suggestion>.</message>
+            <example correction="Herhangi"><marker>Herhengi</marker> bir sorun yok.</example>
+            <example correction="herhangi">Bunun <marker>herhengi</marker> önemi yok.</example>
+        </rule>
+
+        <!-- "merhaba" misspelled as "meraba" (dropped h) -->
+        <rule id="MERABA" name="'meraba' yerine 'merhaba'">
+            <pattern>
+                <token regexp="yes">[Mm]eraba</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Mm])eraba" regexp_replace="$1erhaba"/></suggestion>.</message>
+            <example correction="Merhaba"><marker>Meraba</marker> nasılsın?</example>
+            <example correction="merhaba">Bana <marker>meraba</marker> dedi.</example>
+        </rule>
+
+        <!-- "hiçbir" written as two words "hiç bir" (should be one word when meaning "no/none") -->
+        <rule id="HIC_BIR" name="'hiç bir' yerine 'hiçbir'">
+            <pattern>
+                <token>hiç</token>
+                <token>bir</token>
+            </pattern>
+            <message>'hiçbir' belirsiz zamiri tek kelime olarak yazılmalıdır.</message>
+            <suggestion>hiçbir</suggestion>
+            <example correction="hiçbir">Bu konuda <marker>hiç bir</marker> fikrim yok.</example>
+            <example correction="hiçbir">Evde <marker>hiç bir</marker> ekmek kalmadı.</example>
+        </rule>
+
+        <!-- "hangibir" -> "hangi bir" (wrongly joined) -->
+        <rule id="HANGIBIR" name="'hangibir' yerine 'hangi bir'">
+            <pattern>
+                <token regexp="yes">[Hh]angibir</token>
+            </pattern>
+            <message>'hangi bir' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Hh])angibir" regexp_replace="$1angi bir"/></suggestion>
+            <example correction="Hangi bir"><marker>Hangibir</marker> gün geleceksin?</example>
+            <example correction="hangi bir">Bunun <marker>hangibir</marker> önemi yok.</example>
+        </rule>
+
+        <!-- "yani" (conjunction = that is) misspelled as "yanı" (side). Flag "yanı" followed
+             by a comma, a high-confidence signal the conjunction "yani" is meant. -->
+        <rule id="YANI_YANI" name="'yanı' yerine 'yani' (bağlaç)">
+            <pattern>
+                <marker>
+                    <token regexp="yes">[Yy]anı</token>
+                </marker>
+                <token>,</token>
+            </pattern>
+            <message>'yani' bağacı burada uygun olabilir: <suggestion><match no="1" regexp_match="([Yy])anı" regexp_replace="$1ani"/></suggestion>.</message>
+            <example correction="Yani"><marker>Yanı</marker> , bu doğru.</example>
+        </rule>
+
+    </category>
+
+    <!-- COMPOUND WORDS (frequent splitting errors) -->
+
+    <category id="COMPOUND" name="Birleşik Sözcükler" type="misspelling">
+
+        <!-- "herhalde" written as "her halde" (should be one word meaning "probably") -->
+        <rule id="HER_HALDE" name="'her halde' yerine 'herhalde'">
+            <pattern>
+                <token>her</token>
+                <token>halde</token>
+            </pattern>
+            <message>'herhalde' (belki, muhtemelen) tek kelime olarak yazılmalıdır.</message>
+            <suggestion>herhalde</suggestion>
+            <example correction="herhalde">O <marker>her halde</marker> gelecek.</example>
+            <example correction="herhalde">Bu <marker>her halde</marker> en iyisi.</example>
+        </rule>
+
+        <!-- "nasıl" written correctly; "nasıl" split "nas l" is a typo, hard to catch. Skip. -->
+
+        <!-- "peki" vs "pekı" already covered. -->
+
+    </category>
+
 </rules>
