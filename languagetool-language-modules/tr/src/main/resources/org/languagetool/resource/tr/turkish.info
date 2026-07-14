@@ -1,9 +1,10 @@
 #
 # Dictionary properties.
 #
-# Turkish POS tagger dictionary, built from the UD Turkish-BOUN treebank
-# (https://github.com/UniversalDependencies/UD_Turkish-BOUN), licensed CC BY-SA 4.0.
-# Tagset: Universal Dependencies UPOS (NOUN, VERB, ADJ, ...).
+# Turkish POS tagger dictionary, built from Zemberek-generated inflected forms
+# (https://github.com/ahmetaa/zemberek-nlp, Apache-2.0) merged with the
+# UD Turkish-BOUN treebank (https://github.com/UniversalDependencies/UD_Turkish-BOUN,
+# CC BY-SA 4.0). Tagset: Universal Dependencies UPOS (NOUN, VERB, ADJ, ...).
 #
 
 fsa.dict.separator=+

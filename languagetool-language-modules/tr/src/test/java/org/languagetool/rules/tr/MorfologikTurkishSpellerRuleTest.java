@@ -33,11 +33,9 @@ import org.languagetool.language.Turkish;
 /**
  * Tests for {@link MorfologikTurkishSpellerRule}.
  * <p>
- * The dictionary is built from the tr_TR Hunspell dictionary via {@code unmunch},
- * which does not exhaustively expand every Turkish affix combination (Turkish is
- * highly agglutinative). Test words are therefore chosen from forms verified to
- * be present in the expanded word list, and coverage gaps on heavily-suffixed
- * forms are an expected, known limitation of this sub-project.
+ * The dictionary is built from the tr_TR Hunspell dictionary (unmunch-expanded)
+ * unioned with Zemberek-generated inflected forms (Apache-2.0), giving broad
+ * coverage of Turkish's agglutinative morphology.
  */
 public class MorfologikTurkishSpellerRuleTest {
   private JLanguageTool langTool;
@@ -55,6 +53,9 @@ public class MorfologikTurkishSpellerRuleTest {
     assertEquals(Arrays.asList(), Arrays.asList(rule.match(langTool.getAnalyzedSentence("merhaba dünya"))));
     assertEquals(0, rule.match(langTool.getAnalyzedSentence("araba")).length);
     assertEquals(0, rule.match(langTool.getAnalyzedSentence("gitmek")).length);
+
+    // heavily-inflected agglutinative form now covered by the Zemberek-enriched dict
+    assertEquals(0, rule.match(langTool.getAnalyzedSentence("evlerinizden")).length);
 
     // obvious misspellings -> 1 match each
     assertEquals(1, rule.match(langTool.getAnalyzedSentence("merrrrhaba")).length);

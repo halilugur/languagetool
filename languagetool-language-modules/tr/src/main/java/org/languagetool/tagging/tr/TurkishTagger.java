@@ -25,15 +25,14 @@ import org.languagetool.tagging.BaseTagger;
 /**
  * Turkish part-of-speech tagger.
  * <p>
- * Backed by a Morfologik dictionary built from the UD Turkish-BOUN treebank
- * ({@code https://github.com/UniversalDependencies/UD_Turkish-BOUN}, CC BY-SA 4.0).
+ * Backed by a Morfologik dictionary built from Zemberek-generated inflected forms
+ * ({@code https://github.com/ahmetaa/zemberek-nlp}, Apache-2.0) merged with the
+ * UD Turkish-BOUN treebank
+ * ({@code https://github.com/UniversalDependencies/UD_Turkish-BOUN}, CC BY-SA 4.0),
+ * yielding ~4M wordforms with broad coverage of Turkish's agglutinative morphology.
  * The tagset is Universal Dependencies UPOS (see {@code tagset.txt}).
  * <p>
- * Coverage is limited to word forms attested in the treebank (~37k unique forms).
- * Unknown words fall back to a null tag via {@link BaseTagger}'s graceful handling,
- * the same behavior as the inherited {@code DEMO_TAGGER}. Expanding coverage requires
- * generating inflected forms from a morphological analyzer (e.g. Zemberek), which is
- * future work.
+ * Unknown words fall back to a null tag via {@link BaseTagger}'s graceful handling.
  */
 public class TurkishTagger extends BaseTagger {
 

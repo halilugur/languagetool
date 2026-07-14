@@ -1,7 +1,17 @@
-The Turkish POS tagger dictionary (turkish.dict) is derived from the
-UD Turkish-BOUN treebank, licensed under Creative Commons Attribution-ShareAlike 4.0
-(CC BY-SA 4.0).
+The Turkish POS tagger and synthesizer dictionaries (turkish.dict, turkish_synth.dict)
+are derived from two sources:
 
-Source: https://github.com/UniversalDependencies/UD_Turkish-BOUN
+1. Zemberek-generated inflected forms
+   Source: https://github.com/ahmetaa/zemberek-nlp
+   License: Apache License 2.0
 
-This derivative is distributed under the same CC BY-SA 4.0 license terms.
+2. UD Turkish-BOUN treebank (human-annotated gold data)
+   Source: https://github.com/UniversalDependencies/UD_Turkish-BOUN
+   License: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)
+
+The combined derivative is distributed under CC BY-SA 4.0 (the more restrictive of
+the two compatible licenses).
+
+The spelling dictionary (tr_TR.dict) additionally derives from the Hunspell tr_TR
+dictionary by the Turkish Data Depository group
+(https://github.com/tdd-ai/hunspell-tr), licensed MPL 2.0.

@@ -1,8 +1,10 @@
 #
 # Dictionary properties.
 #
-# Turkish word-form synthesizer dictionary, built from the UD Turkish-BOUN
-# treebank (https://github.com/UniversalDependencies/UD_Turkish-BOUN, CC BY-SA 4.0).
+# Turkish word-form synthesizer dictionary, built from Zemberek-generated
+# inflected forms (https://github.com/ahmetaa/zemberek-nlp, Apache-2.0) merged
+# with the UD Turkish-BOUN treebank
+# (https://github.com/UniversalDependencies/UD_Turkish-BOUN, CC BY-SA 4.0).
 #
 
 fsa.dict.separator=+

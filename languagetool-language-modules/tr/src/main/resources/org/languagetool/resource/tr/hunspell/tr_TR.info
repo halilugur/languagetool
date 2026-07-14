@@ -2,8 +2,10 @@
 # Dictionary properties.
 #
 # Turkish (tr_TR) spelling dictionary, built from the Hunspell dictionary
-# by the Turkish Data Depository group (https://github.com/tdd-ai/hunspell-tr),
-# licensed under MPL 2.0 (LGPL-compatible).
+# by the Turkish Data Depository group (https://github.com/tdd-ai/hunspell-tr,
+# MPL 2.0, LGPL-compatible) unioned with Zemberek-generated inflected forms
+# (https://github.com/ahmetaa/zemberek-nlp, Apache-2.0) for broader coverage
+# of agglutinative inflections.
 #
 
 fsa.dict.separator=+

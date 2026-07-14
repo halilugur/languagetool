@@ -31,6 +31,13 @@ import org.languagetool.TestTools;
 import org.languagetool.language.Turkish;
 import org.languagetool.tokenizers.tr.TurkishWordTokenizer;
 
+/**
+ * Smoke test for {@link TurkishTagger}.
+ * <p>
+ * The tagger dictionary is built from Zemberek-generated inflected forms (Apache-2.0)
+ * merged with the UD Turkish-BOUN treebank (CC BY-SA 4.0), yielding ~4M wordforms
+ * with broad coverage of agglutinative inflections.
+ */
 public class TurkishTaggerTest {
 
   private TurkishTagger tagger;
@@ -58,6 +65,13 @@ public class TurkishTaggerTest {
     List<AnalyzedToken> veReadings = tagger.tag(tokenizer.tokenize("ve")).get(0).getReadings();
     assertTrue("ve should be tagged CCONJ, got: " + veReadings,
         veReadings.stream().anyMatch(t -> "CCONJ".equals(t.getPOSTag())));
+
+    // Heavily-inflected agglutinative form: ev+ler+iniz+den = "from your houses".
+    // This form was absent from the small UD-BOUN-only dict; the Zemberek-generated
+    // dict now covers it.
+    List<AnalyzedToken> evlerinizdenReadings = tagger.tag(tokenizer.tokenize("evlerinizden")).get(0).getReadings();
+    assertTrue("evlerinizden should be tagged NOUN, got: " + evlerinizdenReadings,
+        evlerinizdenReadings.stream().anyMatch(t -> "NOUN".equals(t.getPOSTag())));
   }
 
   @Test

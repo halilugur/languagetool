@@ -23,8 +23,8 @@ import org.languagetool.synthesis.BaseSynthesizer;
 /**
  * Turkish word-form synthesizer, used to re-inflect suggestions in grammar rules.
  * <p>
- * Backed by a Morfologik dictionary built from the UD Turkish-BOUN treebank
- * (CC BY-SA 4.0). Coverage is limited to forms attested in the treebank.
+ * Backed by a Morfologik dictionary built from Zemberek-generated inflected forms
+ * (Apache-2.0) merged with the UD Turkish-BOUN treebank (CC BY-SA 4.0).
  */
 public class TurkishSynthesizer extends BaseSynthesizer {
 
