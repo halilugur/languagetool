@@ -27,4 +27,21 @@ USA
 
 <rules lang="tr" xsi:noNamespaceSchemaLocation="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/rules/rules.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
+    <!-- COMMON TYPOGRAPHY -->
+
+    <category id="TYPOS" name="Olası Yazım Yanlışı" type="misspelling">
+        <rulegroup id="DE_KI_CONFUSION" name="'de ki' yerine 'deki'">
+            <rule>
+                <pattern>
+                    <token>de</token>
+                    <token>ki</token>
+                </pattern>
+                <message>'deki' tek bir kelime olarak yazılmalıdır (örneğin &quot;arabadaki&quot;).</message>
+                <suggestion>deki</suggestion>
+                <example correction="deki">Çocuk <marker>de ki</marker> top.</example>
+                <example>Çocuk arabasıyla <marker>deki</marker> top.</example>
+            </rule>
+        </rulegroup>
+    </category>
+
 </rules>
