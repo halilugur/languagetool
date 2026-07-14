@@ -36,6 +36,8 @@ import org.languagetool.rules.UppercaseSentenceStartRule;
 import org.languagetool.rules.WhiteSpaceAtBeginOfParagraph;
 import org.languagetool.rules.WhiteSpaceBeforeParagraphEnd;
 import org.languagetool.rules.tr.MorfologikTurkishSpellerRule;
+import org.languagetool.synthesis.Synthesizer;
+import org.languagetool.synthesis.tr.TurkishSynthesizer;
 import org.languagetool.tagging.Tagger;
 import org.languagetool.tagging.tr.TurkishTagger;
 import org.languagetool.tokenizers.SRXSentenceTokenizer;
@@ -96,6 +98,11 @@ public class Turkish extends Language {
       tagger = new TurkishTagger();
     }
     return tagger;
+  }
+
+  @Override
+  public Synthesizer createDefaultSynthesizer() {
+    return TurkishSynthesizer.INSTANCE;
   }
 
   @Override

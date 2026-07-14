@@ -1,0 +1,13 @@
+#
+# Dictionary properties.
+#
+# Turkish word-form synthesizer dictionary, built from the UD Turkish-BOUN
+# treebank (https://github.com/UniversalDependencies/UD_Turkish-BOUN, CC BY-SA 4.0).
+#
+
+fsa.dict.separator=+
+fsa.dict.encoding=utf-8
+
+fsa.dict.encoder=SUFFIX
+
+fsa.dict.speller.ignore-diacritics=false

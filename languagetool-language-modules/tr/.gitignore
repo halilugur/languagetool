@@ -11,3 +11,4 @@ dict
 !src/main/resources/org/languagetool/resource/tr/hunspell/*.info
 !src/main/resources/org/languagetool/resource/tr/*.dict
 !src/main/resources/org/languagetool/resource/tr/*.info
+!src/main/resources/org/languagetool/resource/tr/*_tags.txt
