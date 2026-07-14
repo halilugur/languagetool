@@ -39,6 +39,8 @@ import org.languagetool.rules.tr.MorfologikTurkishSpellerRule;
 import org.languagetool.synthesis.Synthesizer;
 import org.languagetool.synthesis.tr.TurkishSynthesizer;
 import org.languagetool.tagging.Tagger;
+import org.languagetool.tagging.disambiguation.Disambiguator;
+import org.languagetool.tagging.disambiguation.rules.XmlRuleDisambiguator;
 import org.languagetool.tagging.tr.TurkishTagger;
 import org.languagetool.tokenizers.SRXSentenceTokenizer;
 import org.languagetool.tokenizers.SentenceTokenizer;
@@ -103,6 +105,11 @@ public class Turkish extends Language {
   @Override
   public Synthesizer createDefaultSynthesizer() {
     return TurkishSynthesizer.INSTANCE;
+  }
+
+  @Override
+  public Disambiguator createDefaultDisambiguator() {
+    return new XmlRuleDisambiguator(this);
   }
 
   @Override

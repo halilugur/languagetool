@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Turkish Disambiguation Rules for LanguageTool
+See disambiguation.xsd for syntax.
+Copyright (C) 2026 halilugur, and the LanguageTool contributors
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301
+USA
+-->
+
+<rules lang="tr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../../../../languagetool-core/src/main/resources/org/languagetool/resource/disambiguation.xsd">
+
+  <!--
+  Turkish disambiguation rules. The tagger uses a coarse Universal Dependencies
+  UPOS tagset; these rules resolve common ambiguities using local context.
+
+  Note: coverage is intentionally limited to high-confidence patterns. Many
+  Turkish ambiguities (e.g. gelir = VERB/NOUN) require richer features than the
+  flat UPOS tags provide; those are left to future expansion with a finer tagset.
+  -->
+
+  <!-- Punctuation: a pure punctuation token keeps only the PUNCT reading.
+       This removes spurious non-PUNCT readings the dictionary may attach. -->
+  <rulegroup id="PUNCT" name="Noktalama işaretleri">
+    <rule>
+      <pattern>
+        <marker>
+          <token regexp="yes">[.\,\;\:\!\?\"\'\(\)\[\]\{\}\-—–…«»„“”‘’]</token>
+        </marker>
+      </pattern>
+      <disambig action="filter" postag="PUNCT"/>
+      <example type="untouched">Geldim .</example>
+    </rule>
+  </rulegroup>
+
+</rules>
