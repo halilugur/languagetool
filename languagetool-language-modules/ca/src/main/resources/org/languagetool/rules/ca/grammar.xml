@@ -49241,7 +49241,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
             <example correction="Quan|Quant a|Pel que fa a|En quant|Tan bon punt"><marker>En quan</marker> arribin.</example>
             <example>Se centra en quan arribarà l'ajuda.</example>
         </rule>
-        <rulegroup id="EN_QUANT" name="en quant" default="temp_off">
+        <rulegroup id="EN_QUANT" name="en quant">
             <antipattern>
                 <!-- another rule -->
                 <token regexp="yes">de|en<exception postag=".*LOC_ADV.*" postag_regexp="yes"/></token>
@@ -49264,7 +49264,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token min="0" max="3" postag="&pronom_feble;|RN" postag_regexp="yes"/>
                     <token postag="V.[SI].*" postag_regexp="yes"/>
                 </pattern>
-                <message>¿Volíeu dir <suggestion>quan</suggestion>? "En quant" és possible, encara que una mica formal o antic, en el sentit de "en tant que, en qualitat de".</message>
+                <message>¿Volíeu dir <suggestion>quan</suggestion>? "En quant" és possible (formal o antic) en el sentit de "en tant que, en qualitat de".</message>
                 <suggestion>tan bon punt</suggestion>
                 <example correction="quan|tan bon punt">Us ho farem saber <marker>en quant</marker> ens ho confirmin.</example>
             </rule>
@@ -49277,7 +49277,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     </marker>
                 </pattern>
                 <filter class="org.languagetool.rules.AdaptSuggestionsFilter" args="none:none"/>
-                <message>¿Volíeu dir "quant a" (respecte a) o "quan" (en el moment en què)? "En quant" és possible, encara que una mica formal o antic, en el sentit de "en tant que, en qualitat de".</message>
+                <message>¿Volíeu dir "quant a" (respecte a) o "quan" (en el moment en què)? "En quant" és possible (formal o antic) en el sentit de "en tant que, en qualitat de".</message>
                 <suggestion>quant a \3</suggestion>
                 <suggestion>quan \3</suggestion>
                 <suggestion>tan bon punt \3</suggestion>
@@ -120958,7 +120958,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 </antipattern>
                 <pattern>
                     <token>no</token>
-                    <token chunk="GV" min="0" max="2"><exception inflected="yes">escoltar</exception></token>
+                    <token chunk="GV" min="0" max="2"><exception inflected="yes" regexp="yes">escoltar|deixar|parar</exception></token>
                     <marker>
                         <token inflected="yes">escoltar</token>
                     </marker>
@@ -120969,6 +120969,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <message>&msg_escoltar_sentir;</message>
                 <suggestion>sentir</suggestion>
                 <example correction="sento">No <marker>escolto</marker> massa bé.</example>
+                <example>La mare anava dient que no deixés d'escoltar bé.</example>
             </rule>
             <rule>
                 <antipattern>
@@ -131173,7 +131174,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>present</token>
                 </antipattern>
                 <pattern>
-                    <token regexp="yes" inflected="yes">futur|passat|present|cas|circumstància|situació|context|aprenentatge|moment|instant|època|&unitats_temps;|acord|pacte|relació|ocasió|activitat</token>
+                    <token regexp="yes" inflected="yes">temps|futur|passat|present|cas|circumstància|situació|context|aprenentatge|moment|instant|època|&unitats_temps;|acord|pacte|relació|ocasió|activitat</token>
                     <marker>
                         <token>on</token>
                     </marker>
@@ -131181,6 +131182,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <message>Si no es tracta d'un lloc físic, és preferible dir <suggestion>en què</suggestion>.</message>
                 <example correction="en què">És una situació <marker>on</marker> no pot eixir guanyant ningú.</example>
                 <example correction="en què">Ha arribat un moment <marker>on</marker> ja no puc fer res.</example>
+                <example correction="en què">Hi hagué un temps <marker>on</marker> es deia que es podia parlar de tot.</example>
             </rule>
             <rule>
                 <antipattern>
