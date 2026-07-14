@@ -36,6 +36,8 @@ import org.languagetool.rules.UppercaseSentenceStartRule;
 import org.languagetool.rules.WhiteSpaceAtBeginOfParagraph;
 import org.languagetool.rules.WhiteSpaceBeforeParagraphEnd;
 import org.languagetool.rules.tr.MorfologikTurkishSpellerRule;
+import org.languagetool.tagging.Tagger;
+import org.languagetool.tagging.tr.TurkishTagger;
 import org.languagetool.tokenizers.SRXSentenceTokenizer;
 import org.languagetool.tokenizers.SentenceTokenizer;
 import org.languagetool.tokenizers.WordTokenizer;
@@ -44,15 +46,15 @@ import org.languagetool.tokenizers.tr.TurkishWordTokenizer;
 /**
  * Support for Turkish.
  * <p>
- * This is the foundation module: it provides the language identity, an
- * apostrophe-preserving tokenizer, and the generic built-in rules. POS tagging
- * currently falls back to the inherited {@code DEMO_TAGGER}; a real Turkish
- * tagger and spelling dictionary are added in later sub-projects.
+ * Provides the language identity, an apostrophe-preserving tokenizer, a POS
+ * tagger backed by a UD-BOUN dictionary, Turkish spell-checking, and a set of
+ * grammar/typo rules.
  */
 public class Turkish extends Language {
 
   private SentenceTokenizer sentenceTokenizer;
   private WordTokenizer wordTokenizer;
+  private Tagger tagger;
 
   public Turkish() {
   }
@@ -86,6 +88,14 @@ public class Turkish extends Language {
       wordTokenizer = new TurkishWordTokenizer();
     }
     return wordTokenizer;
+  }
+
+  @Override
+  public Tagger getTagger() {
+    if (tagger == null) {
+      tagger = new TurkishTagger();
+    }
+    return tagger;
   }
 
   @Override

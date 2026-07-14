@@ -1,0 +1,12 @@
+#
+# Dictionary properties.
+#
+# Turkish POS tagger dictionary, built from the UD Turkish-BOUN treebank
+# (https://github.com/UniversalDependencies/UD_Turkish-BOUN), licensed CC BY-SA 4.0.
+# Tagset: Universal Dependencies UPOS (NOUN, VERB, ADJ, ...).
+#
+
+fsa.dict.separator=+
+fsa.dict.encoding=utf-8
+
+fsa.dict.encoder=SUFFIX

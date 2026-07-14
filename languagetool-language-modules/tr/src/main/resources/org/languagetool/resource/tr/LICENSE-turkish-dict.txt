@@ -1,0 +1,7 @@
+The Turkish POS tagger dictionary (turkish.dict) is derived from the
+UD Turkish-BOUN treebank, licensed under Creative Commons Attribution-ShareAlike 4.0
+(CC BY-SA 4.0).
+
+Source: https://github.com/UniversalDependencies/UD_Turkish-BOUN
+
+This derivative is distributed under the same CC BY-SA 4.0 license terms.

@@ -1,0 +1,20 @@
+# Turkish tagset (Universal Dependencies UPOS)
+# Source: UD Turkish-BOUN treebank
+# https://github.com/UniversalDependencies/UD_Turkish-BOUN
+
+ADJ     Adjective
+ADP     Adposition (postposition in Turkish)
+ADV     Adverb
+AUX     Auxiliary
+CCONJ   Coordinating conjunction
+DET     Determiner
+INTJ    Interjection
+NOUN    Noun
+NUM     Numeral
+PART    Particle
+PRON    Pronoun
+PROPN   Proper noun
+PUNCT   Punctuation
+SCONJ   Subordinating conjunction
+VERB    Verb
+X       Other (foreign words, typos, abbreviations)

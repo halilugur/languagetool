@@ -6,6 +6,8 @@ dict
 **/pos_dict.txt*
 **/*.dict
 **/*tags.txt
-# but keep committed runtime dictionaries under hunspell/
+# but keep committed runtime dictionaries under hunspell/ and resource/tr/
 !src/main/resources/org/languagetool/resource/tr/hunspell/*.dict
 !src/main/resources/org/languagetool/resource/tr/hunspell/*.info
+!src/main/resources/org/languagetool/resource/tr/*.dict
+!src/main/resources/org/languagetool/resource/tr/*.info
