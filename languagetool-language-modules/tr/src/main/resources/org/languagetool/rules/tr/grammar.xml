@@ -54,7 +54,8 @@ USA
             <pattern>
                 <token regexp="yes">[Yy]anlız</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Yy])anlız" regexp_replace="$1alnız"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Yy])anlız" regexp_replace="$1alnız"/></suggestion>
             <example correction="Yalnız"><marker>Yanlız</marker> bir kişi geldi.</example>
             <example correction="yalnız">O <marker>yanlız</marker> kaldı.</example>
         </rule>
@@ -64,7 +65,8 @@ USA
             <pattern>
                 <token regexp="yes">[Hh]erkez</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Hh])erkez" regexp_replace="$1erkes"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Hh])erkez" regexp_replace="$1erkes"/></suggestion>
             <example correction="Herkes"><marker>Herkez</marker> geldi.</example>
             <example correction="herkes">Bunu <marker>herkez</marker> bilir.</example>
         </rule>
@@ -119,7 +121,8 @@ USA
             <pattern>
                 <token regexp="yes">[Pp]ekı</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Pp])ekı" regexp_replace="$1eki"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Pp])ekı" regexp_replace="$1eki"/></suggestion>
             <example correction="Peki"><marker>Pekı</marker> öyle olsun.</example>
             <example correction="peki">Bunu <marker>pekı</marker> kabul edemem.</example>
         </rule>
@@ -129,7 +132,8 @@ USA
             <pattern>
                 <token regexp="yes">[Aa]cıkca</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Aa])cıkca" regexp_replace="$1çıkça"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Aa])cıkca" regexp_replace="$1çıkça"/></suggestion>
             <example correction="Açıkça"><marker>Acıkca</marker> söyledi.</example>
             <example correction="açıkça">Bunu bana <marker>acıkca</marker> anlattı.</example>
         </rule>
@@ -139,7 +143,8 @@ USA
             <pattern>
                 <token regexp="yes">[Bb]işey</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Bb])işey" regexp_replace="$1ir şey"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Bb])işey" regexp_replace="$1ir şey"/></suggestion>
             <example correction="Bir şey"><marker>Bişey</marker> değil.</example>
             <example correction="bir şey">Sana <marker>bişey</marker> sorabilirim mi?</example>
         </rule>
@@ -161,7 +166,8 @@ USA
             <pattern>
                 <token regexp="yes">[Ll]isse</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Ll])isse" regexp_replace="$1ise"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Ll])isse" regexp_replace="$1ise"/></suggestion>
             <example correction="Lise"><marker>Lisse</marker> öğrencisi.</example>
             <example correction="lise">Kardeşim <marker>lisse</marker> okuyor.</example>
         </rule>
@@ -171,7 +177,8 @@ USA
             <pattern>
                 <token regexp="yes">[Hh]erhengi</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Hh])erhengi" regexp_replace="$1erhangi"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Hh])erhengi" regexp_replace="$1erhangi"/></suggestion>
             <example correction="Herhangi"><marker>Herhengi</marker> bir sorun yok.</example>
             <example correction="herhangi">Bunun <marker>herhengi</marker> önemi yok.</example>
         </rule>
@@ -181,7 +188,8 @@ USA
             <pattern>
                 <token regexp="yes">[Mm]eraba</token>
             </pattern>
-            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Mm])eraba" regexp_replace="$1erhaba"/></suggestion>.</message>
+            <message>Doğru yazımı:</message>
+            <suggestion><match no="1" regexp_match="([Mm])eraba" regexp_replace="$1erhaba"/></suggestion>
             <example correction="Merhaba"><marker>Meraba</marker> nasılsın?</example>
             <example correction="merhaba">Bana <marker>meraba</marker> dedi.</example>
         </rule>
