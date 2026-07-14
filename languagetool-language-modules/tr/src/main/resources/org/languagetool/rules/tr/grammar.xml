@@ -3020,6 +3020,1189 @@ USA
             <example correction="yapmalıyım">O <marker>yapmaliyim</marker> sanırım.</example>
         </rule>
 
+
+        <!-- ===== Batch 4: Inflected / derived forms of base words (ğ) ===== -->
+
+        <rule id="DAGLAR" name="'daglar' yerine 'dağlar'">
+            <pattern>
+                <token regexp="yes">[Dd]aglar</token>
+            </pattern>
+            <message>'dağlar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])aglar" regexp_replace="$1ağlar"/></suggestion>
+            <example correction="Dağlar">Yüksek <marker>Daglar</marker> gözüküyor.</example>
+            <example correction="dağlar">bu <marker>daglar</marker> gözüküyor.</example>
+        </rule>
+
+        <rule id="DAGLARDA" name="'daglarda' yerine 'dağlarda'">
+            <pattern>
+                <token regexp="yes">[Dd]aglarda</token>
+            </pattern>
+            <message>'dağlarda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])aglarda" regexp_replace="$1ağlarda"/></suggestion>
+            <example correction="Dağlarda">Karlı <marker>Daglarda</marker> kar yağıyor.</example>
+            <example correction="dağlarda">o <marker>daglarda</marker> kar yağıyor.</example>
+        </rule>
+
+        <rule id="DAGIN" name="'dagin' yerine 'dağın'">
+            <pattern>
+                <token regexp="yes">[Dd]agin</token>
+            </pattern>
+            <message>'dağın' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])agin" regexp_replace="$1ağın"/></suggestion>
+            <example correction="Dağın">O <marker>Dagin</marker> yüksektir.</example>
+            <example correction="dağın">bu <marker>dagin</marker> yüksektir.</example>
+        </rule>
+
+        <rule id="DAGA" name="'daga' yerine 'dağa'">
+            <pattern>
+                <token regexp="yes">[Dd]aga</token>
+            </pattern>
+            <message>'dağa' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])aga" regexp_replace="$1ağa"/></suggestion>
+            <example correction="Dağa">Çıktı <marker>Daga</marker> gidecek.</example>
+            <example correction="dağa">bugün <marker>daga</marker> gidecek.</example>
+        </rule>
+
+        <rule id="DAGDAN" name="'dagdan' yerine 'dağdan'">
+            <pattern>
+                <token regexp="yes">[Dd]agdan</token>
+            </pattern>
+            <message>'dağdan' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])agdan" regexp_replace="$1ağdan"/></suggestion>
+            <example correction="Dağdan">Düştü <marker>Dagdan</marker> indi.</example>
+            <example correction="dağdan">o <marker>dagdan</marker> indi.</example>
+        </rule>
+
+        <rule id="YAGMURLARDA" name="'yagmurlarda' yerine 'yağmurlarda'">
+            <pattern>
+                <token regexp="yes">[Yy]agmurlarda</token>
+            </pattern>
+            <message>'yağmurlarda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])agmurlarda" regexp_replace="$1ağmurlarda"/></suggestion>
+            <example correction="Yağmurlarda">Islak <marker>Yagmurlarda</marker> yürüdü.</example>
+            <example correction="yağmurlarda">bu <marker>yagmurlarda</marker> yürüdü.</example>
+        </rule>
+
+        <rule id="SOGUGU" name="'sogugu' yerine 'soğuğu'">
+            <pattern>
+                <token regexp="yes">[Ss]ogugu</token>
+            </pattern>
+            <message>'soğuğu' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])ogugu" regexp_replace="$1oğuğu"/></suggestion>
+            <example correction="Soğuğu">Üşüttü <marker>Sogugu</marker> aldı.</example>
+            <example correction="soğuğu">onu <marker>sogugu</marker> aldı.</example>
+        </rule>
+
+        <rule id="SOGUKTA" name="'sogukta' yerine 'soğukta'">
+            <pattern>
+                <token regexp="yes">[Ss]ogukta</token>
+            </pattern>
+            <message>'soğukta' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])ogukta" regexp_replace="$1oğukta"/></suggestion>
+            <example correction="Soğukta">Titredi <marker>Sogukta</marker> bekledi.</example>
+            <example correction="soğukta">dışarıda <marker>sogukta</marker> bekledi.</example>
+        </rule>
+
+        <rule id="YAGISTA" name="'yagista' yerine 'yağışta'">
+            <pattern>
+                <token regexp="yes">[Yy]agista</token>
+            </pattern>
+            <message>'yağışta' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])agista" regexp_replace="$1ağışta"/></suggestion>
+            <example correction="Yağışta">Islak <marker>Yagista</marker> kaldı.</example>
+            <example correction="yağışta">bu <marker>yagista</marker> kaldı.</example>
+        </rule>
+
+        <rule id="YAGISLI" name="'yagisli' yerine 'yağışlı'">
+            <pattern>
+                <token regexp="yes">[Yy]agisli</token>
+            </pattern>
+            <message>'yağışlı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])agisli" regexp_replace="$1ağışlı"/></suggestion>
+            <example correction="Yağışlı">Bugün <marker>Yagisli</marker> bulut.</example>
+            <example correction="yağışlı">hava <marker>yagisli</marker> bulut.</example>
+        </rule>
+
+        <rule id="AGIRLAR" name="'agirlar' yerine 'ağırlar'">
+            <pattern>
+                <token regexp="yes">[Aa]girlar</token>
+            </pattern>
+            <message>'ağırlar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Aa])girlar" regexp_replace="$1ğırlar"/></suggestion>
+            <example correction="Ağırlar">Bunlar <marker>Agirlar</marker> kutu.</example>
+            <example correction="ağırlar">o <marker>agirlar</marker> kutu.</example>
+        </rule>
+
+        <rule id="AGIRI" name="'agiri' yerine 'ağırı'">
+            <pattern>
+                <token regexp="yes">[Aa]giri</token>
+            </pattern>
+            <message>'ağırı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Aa])giri" regexp_replace="$1ğırı"/></suggestion>
+            <example correction="Ağırı">Aldı <marker>Agiri</marker> taşıdı.</example>
+            <example correction="ağırı">onu <marker>agiri</marker> taşıdı.</example>
+        </rule>
+
+        <rule id="AGIRLASTIRMAK" name="'agirlastirmak' yerine 'ağırlaştırmak'">
+            <pattern>
+                <token regexp="yes">[Aa]girlastirmak</token>
+            </pattern>
+            <message>'ağırlaştırmak' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Aa])girlastirmak" regexp_replace="$1ğırlaştırmak"/></suggestion>
+            <example correction="Ağırlaştırmak">İş <marker>Agirlastirmak</marker> zor.</example>
+            <example correction="ağırlaştırmak">yorucu oldu.<marker>agirlastirmak</marker> zor.</example>
+        </rule>
+
+        <rule id="DOGRULAR" name="'dogrular' yerine 'doğrular'">
+            <pattern>
+                <token regexp="yes">[Dd]ogrular</token>
+            </pattern>
+            <message>'doğrular' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogrular" regexp_replace="$1oğrular"/></suggestion>
+            <example correction="Doğrular">Bunlar <marker>Dogrular</marker> bilgi.</example>
+            <example correction="doğrular">hepsi <marker>dogrular</marker> bilgi.</example>
+        </rule>
+
+        <rule id="DOGRULU" name="'dogrulu' yerine 'doğrulu'">
+            <pattern>
+                <token regexp="yes">[Dd]ogrulu</token>
+            </pattern>
+            <message>'doğrulu' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogrulu" regexp_replace="$1oğrulu"/></suggestion>
+            <example correction="Doğrulu">O <marker>Dogrulu</marker> sözcük.</example>
+            <example correction="doğrulu">bu <marker>dogrulu</marker> sözcük.</example>
+        </rule>
+
+        <rule id="DOGRULUGU" name="'dogrulugu' yerine 'doğruluğu'">
+            <pattern>
+                <token regexp="yes">[Dd]ogrulugu</token>
+            </pattern>
+            <message>'doğruluğu' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogrulugu" regexp_replace="$1oğruluğu"/></suggestion>
+            <example correction="Doğruluğu">Bilgi <marker>Dogrulugu</marker> kuşkulu.</example>
+            <example correction="doğruluğu">sonu <marker>dogrulugu</marker> kuşkulu.</example>
+        </rule>
+
+        <rule id="DOGRUDA" name="'dogruda' yerine 'doğruda'">
+            <pattern>
+                <token regexp="yes">[Dd]ogruda</token>
+            </pattern>
+            <message>'doğruda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogruda" regexp_replace="$1oğruda"/></suggestion>
+            <example correction="Doğruda">O <marker>Dogruda</marker> ısı.</example>
+            <example correction="doğruda">bu <marker>dogruda</marker> ısı.</example>
+        </rule>
+
+        <rule id="DOGALLIK" name="'dogallik' yerine 'doğallık'">
+            <pattern>
+                <token regexp="yes">[Dd]ogallik</token>
+            </pattern>
+            <message>'doğallık' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogallik" regexp_replace="$1oğallık"/></suggestion>
+            <example correction="Doğallık">Bu <marker>Dogallik</marker> güzeli.</example>
+            <example correction="doğallık">onun <marker>dogallik</marker> güzeli.</example>
+        </rule>
+
+        <rule id="DOGALDA" name="'dogalda' yerine 'doğalda'">
+            <pattern>
+                <token regexp="yes">[Dd]ogalda</token>
+            </pattern>
+            <message>'doğalda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogalda" regexp_replace="$1oğalda"/></suggestion>
+            <example correction="Doğalda">O <marker>Dogalda</marker> yaşar.</example>
+            <example correction="doğalda">bu <marker>dogalda</marker> yaşar.</example>
+        </rule>
+
+        <rule id="DOGALI" name="'dogali' yerine 'doğalı'">
+            <pattern>
+                <token regexp="yes">[Dd]ogali</token>
+            </pattern>
+            <message>'doğalı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])ogali" regexp_replace="$1oğalı"/></suggestion>
+            <example correction="Doğalı">Geçen <marker>Dogali</marker> uğraşıyor.</example>
+            <example correction="doğalı">beri <marker>dogali</marker> uğraşıyor.</example>
+        </rule>
+
+        <rule id="BAGLILIK" name="'baglilik' yerine 'bağlılık'">
+            <pattern>
+                <token regexp="yes">[Bb]aglilik</token>
+            </pattern>
+            <message>'bağlılık' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])aglilik" regexp_replace="$1ağlılık"/></suggestion>
+            <example correction="Bağlılık">O <marker>Baglilik</marker> güçlü.</example>
+            <example correction="bağlılık">bu <marker>baglilik</marker> güçlü.</example>
+        </rule>
+
+        <rule id="BAGLILAR" name="'baglilar' yerine 'bağlılar'">
+            <pattern>
+                <token regexp="yes">[Bb]aglilar</token>
+            </pattern>
+            <message>'bağlılar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])aglilar" regexp_replace="$1ağlılar"/></suggestion>
+            <example correction="Bağlılar">Onlar <marker>Baglilar</marker> insan.</example>
+            <example correction="bağlılar">o <marker>baglilar</marker> insan.</example>
+        </rule>
+
+        <rule id="BAGIMLILIK" name="'bagimlilik' yerine 'bağımlılık'">
+            <pattern>
+                <token regexp="yes">[Bb]agimlilik</token>
+            </pattern>
+            <message>'bağımlılık' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])agimlilik" regexp_replace="$1ağımlılık"/></suggestion>
+            <example correction="Bağımlılık">Sigara <marker>Bagimlilik</marker> hastalık.</example>
+            <example correction="bağımlılık">bir <marker>bagimlilik</marker> hastalık.</example>
+        </rule>
+
+        <rule id="BAGIMLILARDA" name="'bagimlilarda' yerine 'bağımlılarda'">
+            <pattern>
+                <token regexp="yes">[Bb]agimlilarda</token>
+            </pattern>
+            <message>'bağımlılarda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])agimlilarda" regexp_replace="$1ağımlılarda"/></suggestion>
+            <example correction="Bağımlılarda">O <marker>Bagimlilarda</marker> sık görülür.</example>
+            <example correction="bağımlılarda">bunlarda <marker>bagimlilarda</marker> sık görülür.</example>
+        </rule>
+
+        <rule id="YILLAR" name="'yillar' yerine 'yıllar'">
+            <pattern>
+                <token regexp="yes">[Yy]illar</token>
+            </pattern>
+            <message>'yıllar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])illar" regexp_replace="$1ıllar"/></suggestion>
+            <example correction="Yıllar">Geçen <marker>Yillar</marker> geçti.</example>
+            <example correction="yıllar">on <marker>yillar</marker> geçti.</example>
+        </rule>
+
+        <rule id="YILDA" name="'yilda' yerine 'yılda'">
+            <pattern>
+                <token regexp="yes">[Yy]ilda</token>
+            </pattern>
+            <message>'yılda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])ilda" regexp_replace="$1ılda"/></suggestion>
+            <example correction="Yılda">Her <marker>Yilda</marker> doğar.</example>
+            <example correction="yılda">bu <marker>yilda</marker> doğar.</example>
+        </rule>
+
+        <rule id="YILI" name="'yili' yerine 'yılı'">
+            <pattern>
+                <token regexp="yes">[Yy]ili</token>
+            </pattern>
+            <message>'yılı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])ili" regexp_replace="$1ılı"/></suggestion>
+            <example correction="Yılı">O <marker>Yili</marker> başarılı.</example>
+            <example correction="yılı">bu <marker>yili</marker> başarılı.</example>
+        </rule>
+
+        <rule id="YILDAN" name="'yildan' yerine 'yıldan'">
+            <pattern>
+                <token regexp="yes">[Yy]ildan</token>
+            </pattern>
+            <message>'yıldan' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])ildan" regexp_replace="$1ıldan"/></suggestion>
+            <example correction="Yıldan">Beri <marker>Yildan</marker> geldi.</example>
+            <example correction="yıldan">o <marker>yildan</marker> geldi.</example>
+        </rule>
+
+        <rule id="KISALAR" name="'kisalar' yerine 'kısalar'">
+            <pattern>
+                <token regexp="yes">[Kk]isalar</token>
+            </pattern>
+            <message>'kısalar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Kk])isalar" regexp_replace="$1ısalar"/></suggestion>
+            <example correction="Kısalar">Bunlar <marker>Kisalar</marker> cümle.</example>
+            <example correction="kısalar">kısa <marker>kisalar</marker> cümle.</example>
+        </rule>
+
+        <rule id="KISALIGI" name="'kisaligi' yerine 'kısalığı'">
+            <pattern>
+                <token regexp="yes">[Kk]isaligi</token>
+            </pattern>
+            <message>'kısalığı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Kk])isaligi" regexp_replace="$1ısalığı"/></suggestion>
+            <example correction="Kısalığı">Onun <marker>Kisaligi</marker> bilinmez.</example>
+            <example correction="kısalığı">bu <marker>kisaligi</marker> bilinmez.</example>
+        </rule>
+
+        <rule id="KISACA" name="'kisaca' yerine 'kısaca'">
+            <pattern>
+                <token regexp="yes">[Kk]isaca</token>
+            </pattern>
+            <message>'kısaca' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Kk])isaca" regexp_replace="$1ısaca"/></suggestion>
+            <example correction="Kısaca">Sözü <marker>Kisaca</marker> anlattı.</example>
+            <example correction="kısaca">bunu <marker>kisaca</marker> anlattı.</example>
+        </rule>
+
+        <rule id="SICAKLAR" name="'sicaklar' yerine 'sıcaklar'">
+            <pattern>
+                <token regexp="yes">[Ss]icaklar</token>
+            </pattern>
+            <message>'sıcaklar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])icaklar" regexp_replace="$1ıcaklar"/></suggestion>
+            <example correction="Sıcaklar">Bunlar <marker>Sicaklar</marker> su.</example>
+            <example correction="sıcaklar">çok <marker>sicaklar</marker> su.</example>
+        </rule>
+
+        <rule id="SICAKTA" name="'sicakta' yerine 'sıcakta'">
+            <pattern>
+                <token regexp="yes">[Ss]icakta</token>
+            </pattern>
+            <message>'sıcakta' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])icakta" regexp_replace="$1ıcakta"/></suggestion>
+            <example correction="Sıcakta">Terledi <marker>Sicakta</marker> bekledi.</example>
+            <example correction="sıcakta">güneşte <marker>sicakta</marker> bekledi.</example>
+        </rule>
+
+        <rule id="SICAGI" name="'sicagi' yerine 'sıcağı'">
+            <pattern>
+                <token regexp="yes">[Ss]icagi</token>
+            </pattern>
+            <message>'sıcağı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])icagi" regexp_replace="$1ıcağı"/></suggestion>
+            <example correction="Sıcağı">İçti <marker>Sicagi</marker> soğutmadan.</example>
+            <example correction="sıcağı">çayı <marker>sicagi</marker> soğutmadan.</example>
+        </rule>
+
+        <rule id="SABIRLI" name="'sabirli' yerine 'sabırlı'">
+            <pattern>
+                <token regexp="yes">[Ss]abirli</token>
+            </pattern>
+            <message>'sabırlı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])abirli" regexp_replace="$1abırlı"/></suggestion>
+            <example correction="Sabırlı">O <marker>Sabirli</marker> insan.</example>
+            <example correction="sabırlı">çok <marker>sabirli</marker> insan.</example>
+        </rule>
+
+        <rule id="SABIRSIZ" name="'sabirsiz' yerine 'sabırsız'">
+            <pattern>
+                <token regexp="yes">[Ss]abirsiz</token>
+            </pattern>
+            <message>'sabırsız' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])abirsiz" regexp_replace="$1abırsız"/></suggestion>
+            <example correction="Sabırsız">Bekleme <marker>Sabirsiz</marker> oldu.</example>
+            <example correction="sabırsız">biraz <marker>sabirsiz</marker> oldu.</example>
+        </rule>
+
+        <rule id="SIRADA" name="'sirada' yerine 'sırada'">
+            <pattern>
+                <token regexp="yes">[Ss]irada</token>
+            </pattern>
+            <message>'sırada' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])irada" regexp_replace="$1ırada"/></suggestion>
+            <example correction="Sırada">Bu <marker>Sirada</marker> bekliyor.</example>
+            <example correction="sırada">o <marker>sirada</marker> bekliyor.</example>
+        </rule>
+
+        <rule id="SIRAYA" name="'siraya' yerine 'sıraya'">
+            <pattern>
+                <token regexp="yes">[Ss]iraya</token>
+            </pattern>
+            <message>'sıraya' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])iraya" regexp_replace="$1ıraya"/></suggestion>
+            <example correction="Sıraya">Geçti <marker>Siraya</marker> koydu.</example>
+            <example correction="sıraya">onu <marker>siraya</marker> koydu.</example>
+        </rule>
+
+        <rule id="SIFIRI" name="'sifiri' yerine 'sıfırı'">
+            <pattern>
+                <token regexp="yes">[Ss]ifiri</token>
+            </pattern>
+            <message>'sıfırı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])ifiri" regexp_replace="$1ıfırı"/></suggestion>
+            <example correction="Sıfırı">Yazdı <marker>Sifiri</marker> yanlış.</example>
+            <example correction="sıfırı">numara <marker>sifiri</marker> yanlış.</example>
+        </rule>
+
+        <rule id="SIFIRA" name="'sifira' yerine 'sıfıra'">
+            <pattern>
+                <token regexp="yes">[Ss]ifira</token>
+            </pattern>
+            <message>'sıfıra' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])ifira" regexp_replace="$1ıfıra"/></suggestion>
+            <example correction="Sıfıra">İndi <marker>Sifira</marker> düştü.</example>
+            <example correction="sıfıra">fiyat <marker>sifira</marker> düştü.</example>
+        </rule>
+
+        <rule id="TASARIMLAR" name="'tasarimlar' yerine 'tasarımlar'">
+            <pattern>
+                <token regexp="yes">[Tt]asarimlar</token>
+            </pattern>
+            <message>'tasarımlar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Tt])asarimlar" regexp_replace="$1asarımlar"/></suggestion>
+            <example correction="Tasarımlar">Yeni <marker>Tasarimlar</marker> hazır.</example>
+            <example correction="tasarımlar">bu <marker>tasarimlar</marker> hazır.</example>
+        </rule>
+
+        <rule id="TASARIMI" name="'tasarimi' yerine 'tasarımı'">
+            <pattern>
+                <token regexp="yes">[Tt]asarimi</token>
+            </pattern>
+            <message>'tasarımı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Tt])asarimi" regexp_replace="$1asarımı"/></suggestion>
+            <example correction="Tasarımı">Beğendi <marker>Tasarimi</marker> çok.</example>
+            <example correction="tasarımı">onun <marker>tasarimi</marker> çok.</example>
+        </rule>
+
+        <rule id="TASARIMCI" name="'tasarimci' yerine 'tasarımcı'">
+            <pattern>
+                <token regexp="yes">[Tt]asarimci</token>
+            </pattern>
+            <message>'tasarımcı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Tt])asarimci" regexp_replace="$1asarımcı"/></suggestion>
+            <example correction="Tasarımcı">O <marker>Tasarimci</marker> ustası.</example>
+            <example correction="tasarımcı">bir <marker>tasarimci</marker> ustası.</example>
+        </rule>
+
+        <rule id="UYARILAR" name="'uyarilar' yerine 'uyarılar'">
+            <pattern>
+                <token regexp="yes">[Uu]yarilar</token>
+            </pattern>
+            <message>'uyarılar' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Uu])yarilar" regexp_replace="$1yarılar"/></suggestion>
+            <example correction="Uyarılar">Bunlar <marker>Uyarilar</marker> önemli.</example>
+            <example correction="uyarılar">onun <marker>uyarilar</marker> önemli.</example>
+        </rule>
+
+        <rule id="UYARIDA" name="'uyarida' yerine 'uyarıda'">
+            <pattern>
+                <token regexp="yes">[Uu]yarida</token>
+            </pattern>
+            <message>'uyarıda' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Uu])yarida" regexp_replace="$1yarıda"/></suggestion>
+            <example correction="Uyarıda">O <marker>Uyarida</marker> bulundu.</example>
+            <example correction="uyarıda">bu <marker>uyarida</marker> bulundu.</example>
+        </rule>
+
+        <rule id="UYARIYI" name="'uyariyi' yerine 'uyarıyı'">
+            <pattern>
+                <token regexp="yes">[Uu]yariyi</token>
+            </pattern>
+            <message>'uyarıyı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Uu])yariyi" regexp_replace="$1yarıyı"/></suggestion>
+            <example correction="Uyarıyı">Aldı <marker>Uyariyi</marker> ciddiye.</example>
+            <example correction="uyarıyı">onun <marker>uyariyi</marker> ciddiye.</example>
+        </rule>
+
+        <rule id="GUNLER" name="'gunler' yerine 'günler'">
+            <pattern>
+                <token regexp="yes">[Gg]unler</token>
+            </pattern>
+            <message>'günler' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])unler" regexp_replace="$1ünler"/></suggestion>
+            <example correction="Günler">Geçen <marker>Gunler</marker> uzun.</example>
+            <example correction="günler">o <marker>gunler</marker> uzun.</example>
+        </rule>
+
+        <rule id="GUNLERDE" name="'gunlerde' yerine 'günlerde'">
+            <pattern>
+                <token regexp="yes">[Gg]unlerde</token>
+            </pattern>
+            <message>'günlerde' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])unlerde" regexp_replace="$1ünlerde"/></suggestion>
+            <example correction="Günlerde">O <marker>Gunlerde</marker> yaşadı.</example>
+            <example correction="günlerde">bu <marker>gunlerde</marker> yaşadı.</example>
+        </rule>
+
+        <rule id="GUNU" name="'gunu' yerine 'günü'">
+            <pattern>
+                <token regexp="yes">[Gg]unu</token>
+            </pattern>
+            <message>'günü' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])unu" regexp_replace="$1ünü"/></suggestion>
+            <example correction="Günü">O <marker>Gunu</marker> gelmedi.</example>
+            <example correction="günü">bugünün <marker>gunu</marker> gelmedi.</example>
+        </rule>
+
+        <rule id="GUNLERDEN" name="'gunlerden' yerine 'günlerden'">
+            <pattern>
+                <token regexp="yes">[Gg]unlerden</token>
+            </pattern>
+            <message>'günlerden' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])unlerden" regexp_replace="$1ünlerden"/></suggestion>
+            <example correction="Günlerden">Bazı <marker>Gunlerden</marker> hatırlar.</example>
+            <example correction="günlerden">o <marker>gunlerden</marker> hatırlar.</example>
+        </rule>
+
+        <rule id="GUNE" name="'gune' yerine 'güne'">
+            <pattern>
+                <token regexp="yes">[Gg]une</token>
+            </pattern>
+            <message>'güne' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])une" regexp_replace="$1üne"/></suggestion>
+            <example correction="Güne">Çıktı <marker>Gune</marker> baktı.</example>
+            <example correction="güne">o <marker>gune</marker> baktı.</example>
+        </rule>
+
+        <rule id="BUGUNLERDE" name="'bugunlerde' yerine 'bugünlerde'">
+            <pattern>
+                <token regexp="yes">[Bb]ugunlerde</token>
+            </pattern>
+            <message>'bugünlerde' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])ugunlerde" regexp_replace="$1ugünlerde"/></suggestion>
+            <example correction="Bugünlerde">O <marker>Bugunlerde</marker> yaşar.</example>
+            <example correction="bugünlerde">bu <marker>bugunlerde</marker> yaşar.</example>
+        </rule>
+
+        <rule id="BUGUNU" name="'bugunu' yerine 'bugünü'">
+            <pattern>
+                <token regexp="yes">[Bb]ugunu</token>
+            </pattern>
+            <message>'bugünü' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])ugunu" regexp_replace="$1ugünü"/></suggestion>
+            <example correction="Bugünü">Geçirdi <marker>Bugunu</marker> unuttu.</example>
+            <example correction="bugünü">o <marker>bugunu</marker> unuttu.</example>
+        </rule>
+
+        <rule id="DUNKU" name="'dunku' yerine 'dünkü'">
+            <pattern>
+                <token regexp="yes">[Dd]unku</token>
+            </pattern>
+            <message>'dünkü' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Dd])unku" regexp_replace="$1ünkü"/></suggestion>
+            <example correction="Dünkü">Olsun <marker>Dunku</marker> felaket.</example>
+            <example correction="dünkü">yağmur <marker>dunku</marker> felaket.</example>
+        </rule>
+
+        <rule id="GUZELLER" name="'guzeller' yerine 'güzeller'">
+            <pattern>
+                <token regexp="yes">[Gg]uzeller</token>
+            </pattern>
+            <message>'güzeller' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])uzeller" regexp_replace="$1üzeller"/></suggestion>
+            <example correction="Güzeller">Bunlar <marker>Guzeller</marker> resim.</example>
+            <example correction="güzeller">çok <marker>guzeller</marker> resim.</example>
+        </rule>
+
+        <rule id="GUZELDE" name="'guzelde' yerine 'güzelde'">
+            <pattern>
+                <token regexp="yes">[Gg]uzelde</token>
+            </pattern>
+            <message>'güzelde' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])uzelde" regexp_replace="$1üzelde"/></suggestion>
+            <example correction="Güzelde">O <marker>Guzelde</marker> görünür.</example>
+            <example correction="güzelde">bu <marker>guzelde</marker> görünür.</example>
+        </rule>
+
+        <rule id="GUZELI" name="'guzeli' yerine 'güzeli'">
+            <pattern>
+                <token regexp="yes">[Gg]uzeli</token>
+            </pattern>
+            <message>'güzeli' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])uzeli" regexp_replace="$1üzeli"/></suggestion>
+            <example correction="Güzeli">Beğendi <marker>Guzeli</marker> çok.</example>
+            <example correction="güzeli">onun <marker>guzeli</marker> çok.</example>
+        </rule>
+
+        <rule id="BUYUKLER" name="'buyukler' yerine 'büyükler'">
+            <pattern>
+                <token regexp="yes">[Bb]uyukler</token>
+            </pattern>
+            <message>'büyükler' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])uyukler" regexp_replace="$1üyükler"/></suggestion>
+            <example correction="Büyükler">Bunlar <marker>Buyukler</marker> evi.</example>
+            <example correction="büyükler">onun <marker>buyukler</marker> evi.</example>
+        </rule>
+
+        <rule id="BUYUGE" name="'buyuge' yerine 'büyüğe'">
+            <pattern>
+                <token regexp="yes">[Bb]uyuge</token>
+            </pattern>
+            <message>'büyüğe' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])uyuge" regexp_replace="$1üyüğe"/></suggestion>
+            <example correction="Büyüğe">Verdi <marker>Buyuge</marker> baktı.</example>
+            <example correction="büyüğe">onu <marker>buyuge</marker> baktı.</example>
+        </rule>
+
+        <rule id="BUYUGU" name="'buyugu' yerine 'büyüğü'">
+            <pattern>
+                <token regexp="yes">[Bb]uyugu</token>
+            </pattern>
+            <message>'büyüğü' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])uyugu" regexp_replace="$1üyüğü"/></suggestion>
+            <example correction="Büyüğü">Gördü <marker>Buyugu</marker> tanıdı.</example>
+            <example correction="büyüğü">onu <marker>buyugu</marker> tanıdı.</example>
+        </rule>
+
+        <rule id="BUYUKSE" name="'buyukse' yerine 'büyükse'">
+            <pattern>
+                <token regexp="yes">[Bb]uyukse</token>
+            </pattern>
+            <message>'büyükse' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])uyukse" regexp_replace="$1üyükse"/></suggestion>
+            <example correction="Büyükse">O <marker>Buyukse</marker> iyi.</example>
+            <example correction="büyükse">bu <marker>buyukse</marker> iyi.</example>
+        </rule>
+
+        <rule id="GITDIM" name="'gitdim' yerine 'gittim'">
+            <pattern>
+                <token regexp="yes">[Gg]itdim</token>
+            </pattern>
+            <message>'gittim' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])itdim" regexp_replace="$1ittim"/></suggestion>
+            <example correction="Gittim">Dün <marker>Gitdim</marker> gitmem.</example>
+            <example correction="gittim">bugün <marker>gitdim</marker> gitmem.</example>
+        </rule>
+
+        <rule id="ETDIM" name="'etdim' yerine 'ettim'">
+            <pattern>
+                <token regexp="yes">[Ee]tdim</token>
+            </pattern>
+            <message>'ettim' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ee])tdim" regexp_replace="$1ttim"/></suggestion>
+            <example correction="Ettim">Ona <marker>Etdim</marker> söylemem.</example>
+            <example correction="ettim">bunu <marker>etdim</marker> söylemem.</example>
+        </rule>
+
+        <rule id="YAPDIM" name="'yapdim' yerine 'yaptım'">
+            <pattern>
+                <token regexp="yes">[Yy]apdim</token>
+            </pattern>
+            <message>'yaptım' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])apdim" regexp_replace="$1aptım"/></suggestion>
+            <example correction="Yaptım">Bunu <marker>Yapdim</marker> hazırladım.</example>
+            <example correction="yaptım">ben <marker>yapdim</marker> hazırladım.</example>
+        </rule>
+
+        <rule id="ANLASILDI" name="'anlasildi' yerine 'anlaşıldı'">
+            <pattern>
+                <token regexp="yes">[Aa]nlasildi</token>
+            </pattern>
+            <message>'anlaşıldı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Aa])nlasildi" regexp_replace="$1nlaşıldı"/></suggestion>
+            <example correction="Anlaşıldı">Sonunda <marker>Anlasildi</marker> iyi.</example>
+            <example correction="anlaşıldı">bu <marker>anlasildi</marker> iyi.</example>
+        </rule>
+
+        <rule id="GORULDU" name="'goruldu' yerine 'görüldü'">
+            <pattern>
+                <token regexp="yes">[Gg]oruldu</token>
+            </pattern>
+            <message>'görüldü' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])oruldu" regexp_replace="$1örüldü"/></suggestion>
+            <example correction="Görüldü">Olay <marker>Goruldu</marker> oldu.</example>
+            <example correction="görüldü">böyle <marker>goruldu</marker> oldu.</example>
+        </rule>
+
+        <rule id="YAPILDI" name="'yapildi' yerine 'yapıldı'">
+            <pattern>
+                <token regexp="yes">[Yy]apildi</token>
+            </pattern>
+            <message>'yapıldı' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])apildi" regexp_replace="$1apıldı"/></suggestion>
+            <example correction="Yapıldı">İş <marker>Yapildi</marker> bitti.</example>
+            <example correction="yapıldı">hızlıca <marker>yapildi</marker> bitti.</example>
+        </rule>
+
+        <rule id="SOYLENDI" name="'soylendi' yerine 'söylendi'">
+            <pattern>
+                <token regexp="yes">[Ss]oylendi</token>
+            </pattern>
+            <message>'söylendi' doğru yazımıdır.</message>
+            <suggestion><match no="1" regexp_match="([Ss])oylendi" regexp_replace="$1öylendi"/></suggestion>
+            <example correction="Söylendi">Bunu <marker>Soylendi</marker> açıkça.</example>
+            <example correction="söylendi">ona <marker>soylendi</marker> açıkça.</example>
+        </rule>
+
+        <rule id="SEHIRLERE" name="'sehirlere' yerine 'şehirlere'">
+            <pattern>
+                <token regexp="yes">[Ss]ehirlere</token>
+            </pattern>
+            <message>'şehirlere' doğru yazımıdır.</message>
+            <suggestion>şehirlere</suggestion>
+            <example correction="şehirlere">Bu <marker>sehirlere</marker> gitti.</example>
+            <example correction="şehirlere">o <marker>sehirlere</marker> gitti.</example>
+        </rule>
+
+        <rule id="SEHIRLERIN" name="'sehirlerin' yerine 'şehirlerin'">
+            <pattern>
+                <token regexp="yes">[Ss]ehirlerin</token>
+            </pattern>
+            <message>'şehirlerin' doğru yazımıdır.</message>
+            <suggestion>şehirlerin</suggestion>
+            <example correction="şehirlerin">O <marker>sehirlerin</marker> nüfusu.</example>
+            <example correction="şehirlerin">bu <marker>sehirlerin</marker> nüfusu.</example>
+        </rule>
+
+        <rule id="SEHIRDE" name="'sehirde' yerine 'şehirde'">
+            <pattern>
+                <token regexp="yes">[Ss]ehirde</token>
+            </pattern>
+            <message>'şehirde' doğru yazımıdır.</message>
+            <suggestion>şehirde</suggestion>
+            <example correction="şehirde">Bu <marker>sehirde</marker> yaşıyor.</example>
+            <example correction="şehirde">o <marker>sehirde</marker> yaşıyor.</example>
+        </rule>
+
+        <rule id="SEHRIN" name="'sehrin' yerine 'şehrin'">
+            <pattern>
+                <token regexp="yes">[Ss]ehrin</token>
+            </pattern>
+            <message>'şehrin' doğru yazımıdır.</message>
+            <suggestion>şehrin</suggestion>
+            <example correction="şehrin">Bu <marker>sehrin</marker> adı.</example>
+            <example correction="şehrin">o <marker>sehrin</marker> adı.</example>
+        </rule>
+
+        <rule id="SEHIRLERI" name="'sehirleri' yerine 'şehirleri'">
+            <pattern>
+                <token regexp="yes">[Ss]ehirleri</token>
+            </pattern>
+            <message>'şehirleri' doğru yazımıdır.</message>
+            <suggestion>şehirleri</suggestion>
+            <example correction="şehirleri">Dolaştı <marker>sehirleri</marker> gezdi.</example>
+            <example correction="şehirleri">o <marker>sehirleri</marker> gezdi.</example>
+        </rule>
+
+        <rule id="SEYI" name="'seyi' yerine 'şeyi'">
+            <pattern>
+                <token regexp="yes">[Ss]eyi</token>
+            </pattern>
+            <message>'şeyi' doğru yazımıdır.</message>
+            <suggestion>şeyi</suggestion>
+            <example correction="şeyi">Aldı <marker>seyi</marker> unuttu.</example>
+            <example correction="şeyi">bir <marker>seyi</marker> unuttu.</example>
+        </rule>
+
+        <rule id="SEYIN" name="'seyin' yerine 'şeyin'">
+            <pattern>
+                <token regexp="yes">[Ss]eyin</token>
+            </pattern>
+            <message>'şeyin' doğru yazımıdır.</message>
+            <suggestion>şeyin</suggestion>
+            <example correction="şeyin">O <marker>seyin</marker> adı.</example>
+            <example correction="şeyin">bir <marker>seyin</marker> adı.</example>
+        </rule>
+
+        <rule id="SARKIDA" name="'sarkida' yerine 'şarkıda'">
+            <pattern>
+                <token regexp="yes">[Ss]arkida</token>
+            </pattern>
+            <message>'şarkıda' doğru yazımıdır.</message>
+            <suggestion>şarkıda</suggestion>
+            <example correction="şarkıda">O <marker>sarkida</marker> sözler.</example>
+            <example correction="şarkıda">bu <marker>sarkida</marker> sözler.</example>
+        </rule>
+
+        <rule id="SARKIYI" name="'sarkiyi' yerine 'şarkıyı'">
+            <pattern>
+                <token regexp="yes">[Ss]arkiyi</token>
+            </pattern>
+            <message>'şarkıyı' doğru yazımıdır.</message>
+            <suggestion>şarkıyı</suggestion>
+            <example correction="şarkıyı">Söyledi <marker>sarkiyi</marker> unuttu.</example>
+            <example correction="şarkıyı">o <marker>sarkiyi</marker> unuttu.</example>
+        </rule>
+
+        <rule id="SIIRDE" name="'siirde' yerine 'şiirde'">
+            <pattern>
+                <token regexp="yes">[Ss]iirde</token>
+            </pattern>
+            <message>'şiirde' doğru yazımıdır.</message>
+            <suggestion>şiirde</suggestion>
+            <example correction="şiirde">Bu <marker>siirde</marker> aşk.</example>
+            <example correction="şiirde">o <marker>siirde</marker> aşk.</example>
+        </rule>
+
+        <rule id="SAIRIN" name="'sairin' yerine 'şairin'">
+            <pattern>
+                <token regexp="yes">[Ss]airin</token>
+            </pattern>
+            <message>'şairin' doğru yazımıdır.</message>
+            <suggestion>şairin</suggestion>
+            <example correction="şairin">Bu <marker>sairin</marker> hayatı.</example>
+            <example correction="şairin">o <marker>sairin</marker> hayatı.</example>
+        </rule>
+
+        <rule id="SUBELER" name="'subeler' yerine 'şubeler'">
+            <pattern>
+                <token regexp="yes">[Ss]ubeler</token>
+            </pattern>
+            <message>'şubeler' doğru yazımıdır.</message>
+            <suggestion>şubeler</suggestion>
+            <example correction="şubeler">Yeni <marker>subeler</marker> açıldı.</example>
+            <example correction="şubeler">o <marker>subeler</marker> açıldı.</example>
+        </rule>
+
+        <rule id="SUBEDE" name="'subede' yerine 'şubede'">
+            <pattern>
+                <token regexp="yes">[Ss]ubede</token>
+            </pattern>
+            <message>'şubede' doğru yazımıdır.</message>
+            <suggestion>şubede</suggestion>
+            <example correction="şubede">Bu <marker>subede</marker> çalışır.</example>
+            <example correction="şubede">o <marker>subede</marker> çalışır.</example>
+        </rule>
+
+        <rule id="SUBENIN" name="'subenin' yerine 'şubenin'">
+            <pattern>
+                <token regexp="yes">[Ss]ubenin</token>
+            </pattern>
+            <message>'şubenin' doğru yazımıdır.</message>
+            <suggestion>şubenin</suggestion>
+            <example correction="şubenin">Bu <marker>subenin</marker> adı.</example>
+            <example correction="şubenin">o <marker>subenin</marker> adı.</example>
+        </rule>
+
+        <rule id="SARTLARDA" name="'sartlarda' yerine 'şartlarda'">
+            <pattern>
+                <token regexp="yes">[Ss]artlarda</token>
+            </pattern>
+            <message>'şartlarda' doğru yazımıdır.</message>
+            <suggestion>şartlarda</suggestion>
+            <example correction="şartlarda">O <marker>sartlarda</marker> zor.</example>
+            <example correction="şartlarda">bu <marker>sartlarda</marker> zor.</example>
+        </rule>
+
+        <rule id="SARTI" name="'sarti' yerine 'şartı'">
+            <pattern>
+                <token regexp="yes">[Ss]arti</token>
+            </pattern>
+            <message>'şartı' doğru yazımıdır.</message>
+            <suggestion>şartı</suggestion>
+            <example correction="şartı">Kabul <marker>sarti</marker> var.</example>
+            <example correction="şartı">bir <marker>sarti</marker> var.</example>
+        </rule>
+
+        <rule id="SIFRELER" name="'sifreler' yerine 'şifreler'">
+            <pattern>
+                <token regexp="yes">[Ss]ifreler</token>
+            </pattern>
+            <message>'şifreler' doğru yazımıdır.</message>
+            <suggestion>şifreler</suggestion>
+            <example correction="şifreler">Yeni <marker>sifreler</marker> kırıldı.</example>
+            <example correction="şifreler">o <marker>sifreler</marker> kırıldı.</example>
+        </rule>
+
+        <rule id="SIFREMI" name="'sifremi' yerine 'şifremi'">
+            <pattern>
+                <token regexp="yes">[Ss]ifremi</token>
+            </pattern>
+            <message>'şifremi' doğru yazımıdır.</message>
+            <suggestion>şifremi</suggestion>
+            <example correction="şifremi">Unuttum <marker>sifremi</marker> dün.</example>
+            <example correction="şifremi">o <marker>sifremi</marker> dün.</example>
+        </rule>
+
+        <rule id="SEFKATI" name="'sefkati' yerine 'şefkati'">
+            <pattern>
+                <token regexp="yes">[Ss]efkati</token>
+            </pattern>
+            <message>'şefkati' doğru yazımıdır.</message>
+            <suggestion>şefkati</suggestion>
+            <example correction="şefkati">Gösterdi <marker>sefkati</marker> açık.</example>
+            <example correction="şefkati">ona <marker>sefkati</marker> açık.</example>
+        </rule>
+
+        <rule id="CICEKLER" name="'cicekler' yerine 'çiçekler'">
+            <pattern>
+                <token regexp="yes">[Cc]icekler</token>
+            </pattern>
+            <message>'çiçekler' doğru yazımıdır.</message>
+            <suggestion>çiçekler</suggestion>
+            <example correction="çiçekler">Bahçede <marker>cicekler</marker> açtı.</example>
+            <example correction="çiçekler">o <marker>cicekler</marker> açtı.</example>
+        </rule>
+
+        <rule id="CICEKTE" name="'cicekte' yerine 'çiçekte'">
+            <pattern>
+                <token regexp="yes">[Cc]icekte</token>
+            </pattern>
+            <message>'çiçekte' doğru yazımıdır.</message>
+            <suggestion>çiçekte</suggestion>
+            <example correction="çiçekte">Bu <marker>cicekte</marker> su.</example>
+            <example correction="çiçekte">o <marker>cicekte</marker> su.</example>
+        </rule>
+
+        <rule id="CICEGI" name="'cicegi' yerine 'çiçeği'">
+            <pattern>
+                <token regexp="yes">[Cc]icegi</token>
+            </pattern>
+            <message>'çiçeği' doğru yazımıdır.</message>
+            <suggestion>çiçeği</suggestion>
+            <example correction="çiçeği">Kopardı <marker>cicegi</marker> kırdı.</example>
+            <example correction="çiçeği">o <marker>cicegi</marker> kırdı.</example>
+        </rule>
+
+        <rule id="CEKIRDEKLER" name="'cekirdekler' yerine 'çekirdekler'">
+            <pattern>
+                <token regexp="yes">[Cc]ekirdekler</token>
+            </pattern>
+            <message>'çekirdekler' doğru yazımıdır.</message>
+            <suggestion>çekirdekler</suggestion>
+            <example correction="çekirdekler">Bunlar <marker>cekirdekler</marker> yemiş.</example>
+            <example correction="çekirdekler">o <marker>cekirdekler</marker> yemiş.</example>
+        </rule>
+
+        <rule id="CEKIRDEGI" name="'cekirdegi' yerine 'çekirdeği'">
+            <pattern>
+                <token regexp="yes">[Cc]ekirdegi</token>
+            </pattern>
+            <message>'çekirdeği' doğru yazımıdır.</message>
+            <suggestion>çekirdeği</suggestion>
+            <example correction="çekirdeği">Yedi <marker>cekirdegi</marker> atı.</example>
+            <example correction="çekirdeği">onu <marker>cekirdegi</marker> atı.</example>
+        </rule>
+
+        <rule id="CEREZLER" name="'cerezler' yerine 'çerezler'">
+            <pattern>
+                <token regexp="yes">[Cc]erezler</token>
+            </pattern>
+            <message>'çerezler' doğru yazımıdır.</message>
+            <suggestion>çerezler</suggestion>
+            <example correction="çerezler">Yedi <marker>cerezler</marker> tuzlu.</example>
+            <example correction="çerezler">o <marker>cerezler</marker> tuzlu.</example>
+        </rule>
+
+        <rule id="CORBALAR" name="'corbalar' yerine 'çorbalar'">
+            <pattern>
+                <token regexp="yes">[Cc]orbalar</token>
+            </pattern>
+            <message>'çorbalar' doğru yazımıdır.</message>
+            <suggestion>çorbalar</suggestion>
+            <example correction="çorbalar">Sıcak <marker>corbalar</marker> hazır.</example>
+            <example correction="çorbalar">o <marker>corbalar</marker> hazır.</example>
+        </rule>
+
+        <rule id="CORBADA" name="'corbada' yerine 'çorbada'">
+            <pattern>
+                <token regexp="yes">[Cc]orbada</token>
+            </pattern>
+            <message>'çorbada' doğru yazımıdır.</message>
+            <suggestion>çorbada</suggestion>
+            <example correction="çorbada">Bu <marker>corbada</marker> tuz.</example>
+            <example correction="çorbada">o <marker>corbada</marker> tuz.</example>
+        </rule>
+
+        <rule id="CORBAMI" name="'corbami' yerine 'çorbamı'">
+            <pattern>
+                <token regexp="yes">[Cc]orbami</token>
+            </pattern>
+            <message>'çorbamı' doğru yazımıdır.</message>
+            <suggestion>çorbamı</suggestion>
+            <example correction="çorbamı">İçtim <marker>corbami</marker> bugün.</example>
+            <example correction="çorbamı">o <marker>corbami</marker> bugün.</example>
+        </rule>
+
+        <rule id="CORAPLAR" name="'coraplar' yerine 'çoraplar'">
+            <pattern>
+                <token regexp="yes">[Cc]oraplar</token>
+            </pattern>
+            <message>'çoraplar' doğru yazımıdır.</message>
+            <suggestion>çoraplar</suggestion>
+            <example correction="çoraplar">Yırtık <marker>coraplar</marker> eski.</example>
+            <example correction="çoraplar">o <marker>coraplar</marker> eski.</example>
+        </rule>
+
+        <rule id="CORABI" name="'corabi' yerine 'çorabı'">
+            <pattern>
+                <token regexp="yes">[Cc]orabi</token>
+            </pattern>
+            <message>'çorabı' doğru yazımıdır.</message>
+            <suggestion>çorabı</suggestion>
+            <example correction="çorabı">Giydi <marker>corabi</marker> yıkadı.</example>
+            <example correction="çorabı">onu <marker>corabi</marker> yıkadı.</example>
+        </rule>
+
+        <rule id="CIKISTA" name="'cikista' yerine 'çıkışta'">
+            <pattern>
+                <token regexp="yes">[Cc]ikista</token>
+            </pattern>
+            <message>'çıkışta' doğru yazımıdır.</message>
+            <suggestion>çıkışta</suggestion>
+            <example correction="çıkışta">Bu <marker>cikista</marker> kapı.</example>
+            <example correction="çıkışta">o <marker>cikista</marker> kapı.</example>
+        </rule>
+
+        <rule id="CIKISLARI" name="'cikislari' yerine 'çıkışları'">
+            <pattern>
+                <token regexp="yes">[Cc]ikislari</token>
+            </pattern>
+            <message>'çıkışları' doğru yazımıdır.</message>
+            <suggestion>çıkışları</suggestion>
+            <example correction="çıkışları">Kapattı <marker>cikislari</marker> hepsi.</example>
+            <example correction="çıkışları">onun <marker>cikislari</marker> hepsi.</example>
+        </rule>
+
+        <rule id="OGRETMENLER" name="'ogretmenler' yerine 'öğretmenler'">
+            <pattern>
+                <token regexp="yes">[Oo]gretmenler</token>
+            </pattern>
+            <message>'öğretmenler' doğru yazımıdır.</message>
+            <suggestion>öğretmenler</suggestion>
+            <example correction="öğretmenler">Bunlar <marker>ogretmenler</marker> geldi.</example>
+            <example correction="öğretmenler">o <marker>ogretmenler</marker> geldi.</example>
+        </rule>
+
+        <rule id="OGRETMENE" name="'ogretmene' yerine 'öğretmene'">
+            <pattern>
+                <token regexp="yes">[Oo]gretmene</token>
+            </pattern>
+            <message>'öğretmene' doğru yazımıdır.</message>
+            <suggestion>öğretmene</suggestion>
+            <example correction="öğretmene">Sordu <marker>ogretmene</marker> konuyu.</example>
+            <example correction="öğretmene">onu <marker>ogretmene</marker> konuyu.</example>
+        </rule>
+
+        <rule id="OGRETMENIN" name="'ogretmenin' yerine 'öğretmenin'">
+            <pattern>
+                <token regexp="yes">[Oo]gretmenin</token>
+            </pattern>
+            <message>'öğretmenin' doğru yazımıdır.</message>
+            <suggestion>öğretmenin</suggestion>
+            <example correction="öğretmenin">Bu <marker>ogretmenin</marker> sesi.</example>
+            <example correction="öğretmenin">o <marker>ogretmenin</marker> sesi.</example>
+        </rule>
+
+        <rule id="OGRETMENLERI" name="'ogretmenleri' yerine 'öğretmenleri'">
+            <pattern>
+                <token regexp="yes">[Oo]gretmenleri</token>
+            </pattern>
+            <message>'öğretmenleri' doğru yazımıdır.</message>
+            <suggestion>öğretmenleri</suggestion>
+            <example correction="öğretmenleri">Gördü <marker>ogretmenleri</marker> hepsi.</example>
+            <example correction="öğretmenleri">onun <marker>ogretmenleri</marker> hepsi.</example>
+        </rule>
+
+        <rule id="OGRENCILER" name="'ogrenciler' yerine 'öğrenciler'">
+            <pattern>
+                <token regexp="yes">[Oo]grenciler</token>
+            </pattern>
+            <message>'öğrenciler' doğru yazımıdır.</message>
+            <suggestion>öğrenciler</suggestion>
+            <example correction="öğrenciler">Bunlar <marker>ogrenciler</marker> çalışkan.</example>
+            <example correction="öğrenciler">o <marker>ogrenciler</marker> çalışkan.</example>
+        </rule>
+
+        <rule id="OGRENCIYE" name="'ogrenciye' yerine 'öğrenciye'">
+            <pattern>
+                <token regexp="yes">[Oo]grenciye</token>
+            </pattern>
+            <message>'öğrenciye' doğru yazımıdır.</message>
+            <suggestion>öğrenciye</suggestion>
+            <example correction="öğrenciye">Verdi <marker>ogrenciye</marker> kitap.</example>
+            <example correction="öğrenciye">ona <marker>ogrenciye</marker> kitap.</example>
+        </rule>
+
+        <rule id="OGRENCININ" name="'ogrencinin' yerine 'öğrencinin'">
+            <pattern>
+                <token regexp="yes">[Oo]grencinin</token>
+            </pattern>
+            <message>'öğrencinin' doğru yazımıdır.</message>
+            <suggestion>öğrencinin</suggestion>
+            <example correction="öğrencinin">Bu <marker>ogrencinin</marker> çantası.</example>
+            <example correction="öğrencinin">o <marker>ogrencinin</marker> çantası.</example>
+        </rule>
+
+        <rule id="OGRENDIM" name="'ogrendim' yerine 'öğrendim'">
+            <pattern>
+                <token regexp="yes">[Oo]grendim</token>
+            </pattern>
+            <message>'öğrendim' doğru yazımıdır.</message>
+            <suggestion>öğrendim</suggestion>
+            <example correction="öğrendim">Dün <marker>ogrendim</marker> unuttum.</example>
+            <example correction="öğrendim">bugün <marker>ogrendim</marker> unuttum.</example>
+        </rule>
+
+        <rule id="OGRENIYOR" name="'ogreniyor' yerine 'öğreniyor'">
+            <pattern>
+                <token regexp="yes">[Oo]greniyor</token>
+            </pattern>
+            <message>'öğreniyor' doğru yazımıdır.</message>
+            <suggestion>öğreniyor</suggestion>
+            <example correction="öğreniyor">O <marker>ogreniyor</marker> Türkçe.</example>
+            <example correction="öğreniyor">hızla <marker>ogreniyor</marker> Türkçe.</example>
+        </rule>
+
+        <rule id="OGRENDI" name="'ogrendi' yerine 'öğrendi'">
+            <pattern>
+                <token regexp="yes">[Oo]grendi</token>
+            </pattern>
+            <message>'öğrendi' doğru yazımıdır.</message>
+            <suggestion>öğrendi</suggestion>
+            <example correction="öğrendi">Dün <marker>ogrendi</marker> konuyu.</example>
+            <example correction="öğrendi">bugün <marker>ogrendi</marker> konuyu.</example>
+        </rule>
+
+        <rule id="OZELLESTIRME" name="'ozellestirme' yerine 'özelleştirme'">
+            <pattern>
+                <token regexp="yes">[Oo]zellestirme</token>
+            </pattern>
+            <message>'özelleştirme' doğru yazımıdır.</message>
+            <suggestion>özelleştirme</suggestion>
+            <example correction="özelleştirme">Bu <marker>ozellestirme</marker> hızlı.</example>
+            <example correction="özelleştirme">onun <marker>ozellestirme</marker> hızlı.</example>
+        </rule>
+
+        <rule id="OLCULER" name="'olculer' yerine 'ölçüler'">
+            <pattern>
+                <token regexp="yes">[Oo]lculer</token>
+            </pattern>
+            <message>'ölçüler' doğru yazımıdır.</message>
+            <suggestion>ölçüler</suggestion>
+            <example correction="ölçüler">Bu <marker>olculer</marker> doğru.</example>
+            <example correction="ölçüler">o <marker>olculer</marker> doğru.</example>
+        </rule>
+
+        <rule id="ORUMCEGIN" name="'orumcegin' yerine 'örümceğin'">
+            <pattern>
+                <token regexp="yes">[Oo]rumcegin</token>
+            </pattern>
+            <message>'örümceğin' doğru yazımıdır.</message>
+            <suggestion>örümceğin</suggestion>
+            <example correction="örümceğin">Bu <marker>orumcegin</marker> ağı.</example>
+            <example correction="örümceğin">o <marker>orumcegin</marker> ağı.</example>
+        </rule>
+
+        <rule id="ODEVLER" name="'odevler' yerine 'ödevler'">
+            <pattern>
+                <token regexp="yes">[Oo]devler</token>
+            </pattern>
+            <message>'ödevler' doğru yazımıdır.</message>
+            <suggestion>ödevler</suggestion>
+            <example correction="ödevler">Bunlar <marker>odevler</marker> uzun.</example>
+            <example correction="ödevler">o <marker>odevler</marker> uzun.</example>
+        </rule>
+
+        <rule id="ODEVI" name="'odevi' yerine 'ödevi'">
+            <pattern>
+                <token regexp="yes">[Oo]devi</token>
+            </pattern>
+            <message>'ödevi' doğru yazımıdır.</message>
+            <suggestion>ödevi</suggestion>
+            <example correction="ödevi">Yaptı <marker>odevi</marker> bitirdi.</example>
+            <example correction="ödevi">onun <marker>odevi</marker> bitirdi.</example>
+        </rule>
+
+        <rule id="ODEVIM" name="'odevim' yerine 'ödevim'">
+            <pattern>
+                <token regexp="yes">[Oo]devim</token>
+            </pattern>
+            <message>'ödevim' doğru yazımıdır.</message>
+            <suggestion>ödevim</suggestion>
+            <example correction="ödevim">Bitirdim <marker>odevim</marker> bugün.</example>
+            <example correction="ödevim">onu <marker>odevim</marker> bugün.</example>
+        </rule>
+
+        <rule id="UZGUNUM" name="'uzgunum' yerine 'üzgünüm'">
+            <pattern>
+                <token regexp="yes">[Uu]zgunum</token>
+            </pattern>
+            <message>'üzgünüm' doğru yazımıdır.</message>
+            <suggestion>üzgünüm</suggestion>
+            <example correction="üzgünüm">Çok <marker>uzgunum</marker> yapamam.</example>
+            <example correction="üzgünüm">bunu <marker>uzgunum</marker> yapamam.</example>
+        </rule>
+
+        <rule id="UZGUNLER" name="'uzgunler' yerine 'üzgünler'">
+            <pattern>
+                <token regexp="yes">[Uu]zgunler</token>
+            </pattern>
+            <message>'üzgünler' doğru yazımıdır.</message>
+            <suggestion>üzgünler</suggestion>
+            <example correction="üzgünler">Onlar <marker>uzgunler</marker> insan.</example>
+            <example correction="üzgünler">çok <marker>uzgunler</marker> insan.</example>
+        </rule>
+
     </category>
 
     <!-- ADDITIONAL CONFUSIONS -->
@@ -3671,6 +4854,79 @@ USA
             <suggestion>birbiriyle</suggestion>
             <example correction="birbiriyle">O <marker>bir biriyle</marker> konuştu.</example>
             <example correction="birbiriyle">Bu <marker>bir biriyle</marker> anlaştı.</example>
+        </rule>
+
+
+        <!-- ===== Batch 4: split-word compounds (one word -> two words) ===== -->
+
+        <rule id="HERGUN" name="'hergun' yerine 'her gün'">
+            <pattern>
+                <token regexp="yes">[Hh]ergun</token>
+            </pattern>
+            <message>'her gün' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Hh])ergun" regexp_replace="$1er gün"/></suggestion>
+            <example correction="Her gün">Okula <marker>Hergun</marker> gidiyor.</example>
+            <example correction="her gün">o <marker>hergun</marker> gidiyor.</example>
+        </rule>
+
+        <rule id="HERGECE" name="'hergece' yerine 'her gece'">
+            <pattern>
+                <token regexp="yes">[Hh]ergece</token>
+            </pattern>
+            <message>'her gece' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Hh])ergece" regexp_replace="$1er gece"/></suggestion>
+            <example correction="Her gece">Geç <marker>Hergece</marker> uyur.</example>
+            <example correction="her gece">o <marker>hergece</marker> uyur.</example>
+        </rule>
+
+        <rule id="HERSEY" name="'hersey' yerine 'her şey'">
+            <pattern>
+                <token regexp="yes">[Hh]ersey</token>
+            </pattern>
+            <message>'her şey' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Hh])ersey" regexp_replace="$1er şey"/></suggestion>
+            <example correction="Her şey">Oysa <marker>Hersey</marker> değişir.</example>
+            <example correction="her şey">zamanla <marker>hersey</marker> değişir.</example>
+        </rule>
+
+        <rule id="BIRARA" name="'birara' yerine 'bir ara'">
+            <pattern>
+                <token regexp="yes">[Bb]irara</token>
+            </pattern>
+            <message>'bir ara' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])irara" regexp_replace="$1ir ara"/></suggestion>
+            <example correction="Bir ara">Bekle, <marker>Birara</marker> gidelim.</example>
+            <example correction="bir ara">birazdan <marker>birara</marker> gidelim.</example>
+        </rule>
+
+        <rule id="GELDIMI" name="'geldimi' yerine 'geldi mi'">
+            <pattern>
+                <token regexp="yes">[Gg]eldimi</token>
+            </pattern>
+            <message>'geldi mi' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])eldimi" regexp_replace="$1eldi mi"/></suggestion>
+            <example correction="Geldi mi">Sordum, <marker>Geldimi</marker> bugün.</example>
+            <example correction="geldi mi">o <marker>geldimi</marker> bugün.</example>
+        </rule>
+
+        <rule id="GITTINMI" name="'gittinmi' yerine 'gittin mi'">
+            <pattern>
+                <token regexp="yes">[Gg]ittinmi</token>
+            </pattern>
+            <message>'gittin mi' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Gg])ittinmi" regexp_replace="$1ittin mi"/></suggestion>
+            <example correction="Gittin mi">Sordum, <marker>Gittinmi</marker> dün.</example>
+            <example correction="gittin mi">sen <marker>gittinmi</marker> dün.</example>
+        </rule>
+
+        <rule id="YAPTIMMI" name="'yaptimi' yerine 'yaptım mı'">
+            <pattern>
+                <token regexp="yes">[Yy]aptimi</token>
+            </pattern>
+            <message>'yaptım mı' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])aptimi" regexp_replace="$1aptım mı"/></suggestion>
+            <example correction="Yaptım mı">Sordum, <marker>Yaptimi</marker> bunu.</example>
+            <example correction="yaptım mı">sen <marker>yaptimi</marker> bunu.</example>
         </rule>
 
     </category>
