@@ -4,6 +4,7 @@
         title="Easy editing stylesheet" ?>
 <!--
 Turkish Grammar and Typo Rules for LanguageTool
+See tagset.txt for the meaning of the POS tags
 Copyright (C) 2026 halilugur, and the LanguageTool contributors
 
 This library is free software; you can redistribute it and/or
@@ -30,6 +31,8 @@ USA
     <!-- COMMON TYPOGRAPHY -->
 
     <category id="TYPOS" name="Olası Yazım Yanlışı" type="misspelling">
+
+        <!-- de ki -> deki (fused relative-clause modifier written as two words) -->
         <rulegroup id="DE_KI_CONFUSION" name="'de ki' yerine 'deki'">
             <rule>
                 <pattern>
@@ -42,6 +45,105 @@ USA
                 <example>Çocuk arabasıyla <marker>deki</marker> top.</example>
             </rule>
         </rulegroup>
+
+        <!-- Common Turkish misspellings (well-documented confusions). Each rule
+             matches a frequent wrong form and suggests the correct one. -->
+
+        <!-- "yanlız" -> "yalnız" (dropped l; very common) -->
+        <rule id="YANLIZ_YALNIZ" name="'yanlız' yerine 'yalnız'">
+            <pattern>
+                <token regexp="yes">[Yy]anlız</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Yy])anlız" regexp_replace="$1alnız"/></suggestion>.</message>
+            <example correction="Yalnız"><marker>Yanlız</marker> bir kişi geldi.</example>
+            <example correction="yalnız">O <marker>yanlız</marker> kaldı.</example>
+        </rule>
+
+        <!-- "herkez" -> "herkes" (z/s confusion) -->
+        <rule id="HERKEZ_HERKES" name="'herkez' yerine 'herkes'">
+            <pattern>
+                <token regexp="yes">[Hh]erkez</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Hh])erkez" regexp_replace="$1erkes"/></suggestion>.</message>
+            <example correction="Herkes"><marker>Herkez</marker> geldi.</example>
+            <example correction="herkes">Bunu <marker>herkez</marker> bilir.</example>
+        </rule>
+
+        <!-- "herhangibir" -> "herhangi bir" (wrongly written as one word) -->
+        <rule id="HERHANGIBIR" name="'herhangibir' yerine 'herhangi bir'">
+            <pattern>
+                <token regexp="yes">[Hh]erhangibir</token>
+            </pattern>
+            <message>'herhangi bir' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Hh])erhangibir" regexp_replace="$1erhangi bir"/></suggestion>
+            <example correction="herhangi bir">Bu <marker>herhangibir</marker> soru değildir.</example>
+            <example>Bu <marker>herhangi bir</marker> soru değildir.</example>
+        </rule>
+
+        <!-- "birşey" -> "bir şey" (wrongly written as one word) -->
+        <rule id="BIRSEY" name="'birşey' yerine 'bir şey'">
+            <pattern>
+                <token regexp="yes">[Bb]irşey</token>
+            </pattern>
+            <message>'bir şey' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Bb])irşey" regexp_replace="$1ir şey"/></suggestion>
+            <example correction="bir şey">O <marker>birşey</marker> söyledi.</example>
+            <example>O <marker>bir şey</marker> söyledi.</example>
+        </rule>
+
+        <!-- "birçok" written split as "bir kaç" (should be one word) -->
+        <rule id="BIR_KAC" name="'bir kaç' yerine 'birkaç'">
+            <pattern>
+                <token>bir</token>
+                <token>kaç</token>
+            </pattern>
+            <message>'birkaç' tek bir kelime olarak yazılmalıdır.</message>
+            <suggestion>birkaç</suggestion>
+            <example correction="birkaç">Dün <marker>bir kaç</marker> arkadaş geldi.</example>
+            <example>Dün <marker>birkaç</marker> arkadaş geldi.</example>
+        </rule>
+
+        <!-- "yada" -> "ya da" (conjunction must be two words) -->
+        <rule id="YADA" name="'yada' yerine 'ya da'">
+            <pattern>
+                <token regexp="yes">[Yy]ada</token>
+            </pattern>
+            <message>'ya da' iki kelime olarak yazılmalıdır.</message>
+            <suggestion><match no="1" regexp_match="([Yy])ada" regexp_replace="$1a da"/></suggestion>
+            <example correction="ya da">Çay <marker>yada</marker> kahve içelim.</example>
+            <example>Çay <marker>ya da</marker> kahve içelim.</example>
+        </rule>
+
+        <!-- "pekı" -> "peki" (dotless-i confusion; correct is 'peki' with dotted i) -->
+        <rule id="PEKI" name="'pekı' yerine 'peki'">
+            <pattern>
+                <token regexp="yes">[Pp]ekı</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Pp])ekı" regexp_replace="$1eki"/></suggestion>.</message>
+            <example correction="Peki"><marker>Pekı</marker> öyle olsun.</example>
+            <example correction="peki">Bunu <marker>pekı</marker> kabul edemem.</example>
+        </rule>
+
+        <!-- "acıkca" -> "açıkça" (missing ç). Pattern uses c (not ç) to catch only the wrong form. -->
+        <rule id="ACIKCA" name="'acıkca' yerine 'açıkça'">
+            <pattern>
+                <token regexp="yes">[Aa]cıkca</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Aa])cıkca" regexp_replace="$1çıkça"/></suggestion>.</message>
+            <example correction="Açıkça"><marker>Acıkca</marker> söyledi.</example>
+            <example correction="açıkça">Bunu bana <marker>acıkca</marker> anlattı.</example>
+        </rule>
+
+        <!-- "bişey" -> "bir şey" (colloquial contraction written out) -->
+        <rule id="BISEY" name="'bişey' yerine 'bir şey'">
+            <pattern>
+                <token regexp="yes">[Bb]işey</token>
+            </pattern>
+            <message>Doğru yazımı: <suggestion><match no="1" regexp_match="([Bb])işey" regexp_replace="$1ir şey"/></suggestion>.</message>
+            <example correction="Bir şey"><marker>Bişey</marker> değil.</example>
+            <example correction="bir şey">Sana <marker>bişey</marker> sorabilirim mi?</example>
+        </rule>
+
     </category>
 
 </rules>
