@@ -35,6 +35,7 @@ import org.languagetool.rules.SentenceWhitespaceRule;
 import org.languagetool.rules.UppercaseSentenceStartRule;
 import org.languagetool.rules.WhiteSpaceAtBeginOfParagraph;
 import org.languagetool.rules.WhiteSpaceBeforeParagraphEnd;
+import org.languagetool.rules.tr.MorfologikTurkishSpellerRule;
 import org.languagetool.tokenizers.SRXSentenceTokenizer;
 import org.languagetool.tokenizers.SentenceTokenizer;
 import org.languagetool.tokenizers.WordTokenizer;
@@ -110,7 +111,9 @@ public class Turkish extends Language {
         new MultipleWhitespaceRule(messages, this),
         new SentenceWhitespaceRule(messages),
         new WhiteSpaceBeforeParagraphEnd(messages, this),
-        new WhiteSpaceAtBeginOfParagraph(messages)
+        new WhiteSpaceAtBeginOfParagraph(messages),
+
+        new MorfologikTurkishSpellerRule(messages, this, userConfig, altLanguages)
     );
   }
 }

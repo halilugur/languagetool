@@ -1,0 +1,16 @@
+#
+# Dictionary properties.
+#
+# Turkish (tr_TR) spelling dictionary, built from the Hunspell dictionary
+# by the Turkish Data Depository group (https://github.com/tdd-ai/hunspell-tr),
+# licensed under MPL 2.0 (LGPL-compatible).
+#
+
+fsa.dict.separator=+
+fsa.dict.encoding=utf-8
+
+fsa.dict.encoder=SUFFIX
+
+fsa.dict.speller.ignore-numbers=true
+fsa.dict.speller.ignore-all-uppercase=false
+fsa.dict.speller.ignore-camel-case=false
